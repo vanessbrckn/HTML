@@ -1,0 +1,46 @@
+<style>
+.background {
+  background-color: hsl(180, 50%, 100%);
+}
+
+div {
+  background-color: hsl(180, 50%, 100%);
+}
+
+#title {
+  color:Gray;
+}
+
+#survey-form{
+  background-color: hsl(180, 50%, 100%);
+}
+</style>
+
+<main class= "background">  
+  <h1 id="title">Pet Survey</h1>
+  <h2 id="description">Information on Pet Insurance</h2>
+  <div>
+    <form action="/submit-form" id="survey-form">
+      <input id="name" type="text" placeholder="Name" required><br>
+      <input id= "email" type="email" placeholder="Email" required><br>
+      <p>How many pets do you have?</p>
+      <input id="number" type="number" placeholder="how many"><br>
+      <p>Which is your Largest pet? Do you have pet insurance?</p>
+      <lable><select id="dropdown" type="dropdown">
+        <option value="">Horse</option>
+        <option value="">Dog</option>
+        <option value="">Cat</option></label>
+        <option value="">Other</option>
+      </label>
+      <label><input type="radio" name="first">Yes</label>
+      <label><input type="radio" name="second">No</label>
+      <br>
+      <p>Would you like additional information on how to insure your pet?</p>
+      <label><input type="checkbox" value="first">Yes</label>
+      <label><input type="checkbox" value="second">No</label>
+      <label><input type="checkbox" value="third">Unsure</label>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</main>
