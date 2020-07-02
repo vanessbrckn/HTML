@@ -1,0 +1,353 @@
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEE;
+  font-family: sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a { 
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 30px;
+  font-size: 1em;
+  border: 2px black solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  border: 1px black solid;
+  border-radius: 5px;
+  top: 0px;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hlr(0,);
+}
+
+.logo {
+  width: 60vw;
+}
+
+.logo > img {
+  width: 150px;
+  height: auto;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+  .logo{
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  header {
+    flex-wrap: wrap; 
+  }
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+   padding-bottom: 5px;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  #info {
+    margin-top: 120px;
+  }
+  #aboutUs {
+    margin-top: 0;
+  }
+}
+  
+ nav > ul {
+   width: 35vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+  
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 500px;
+  margin-top: 50px;
+}
+
+#info > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#info input[type="email"]{
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#info input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#info input[type"submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#aboutUs{
+  margin-top:30px;
+}
+
+#aboutUs .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#pricing {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#pricing > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#placeOrder {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: clac(100% / 3);
+  margin: 15px;
+  border: 1px solid #222;
+  border-radius: 5px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+.product > ol {
+  margin: 15px 0;
+}
+.product > ol > li {
+  padding: 5px 0;
+}
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #placeOrder {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+</style>
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img 
+           id="header-img" 
+           src="https://media.publit.io/file/logo-t8.jpg"
+           alt="generic logo"
+           />
+    </div>
+   
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#aboutUs" class="nav-link">About Us</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#placeOrder" class="nav-link">Place an Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div></div>
+  
+  <section id="info">
+    <h2>For All Your Needs</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+             name="email"
+             id="email"
+             type="email"
+             placeholder="Enter your Email"
+             required
+       />
+      <input id="submit" type="submit" value="Accept" class="btn" />
+    </form>
+  </section>
+    
+  <div class="container">
+    <section id="aboutUs">
+      <div class="grid">
+        <div class="icon"><i class=""></i></div>
+        <div class="desc">
+          <h2>We're Family Owned</h2>
+          <p>
+            Since 2005 our family has been helping people with their
+            needs that no one else can!
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class=""></i></div>
+        <div class="desc">
+          <h2>Organic Materials</h2>
+          <p>
+            We make sure we only use the finest organic materials
+            that are reponsibly cultivated by our expert farmers.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class=""></i></div>
+        <div class="desc">
+          <h2>Money Back</h2>
+          <p>
+            We gaurantee your money back if you're not satisfied, we
+            want to make sure the only things you have to say 
+            about us are good things!
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="pricing">
+      <iframe width="560" 
+              height="315"
+              src="https://www.youtube.com/embed/lBlXczPfe0c"
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+       ></iframe>
+    </section>
+    
+    <section id="pricing">
+      <div class="product" id="oneMonth">
+        <div class="level">One Month</div>
+        <h2>$10</h2>
+        <ol>
+          <li>limited access</li>
+          <li>feature one</li>
+          <li>feature two</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="sixMonth">
+        <div class="level">Six Months</div>
+        <h2>$45</h2>
+        <ol>
+          <li>extra access</li>
+          <li>feature one</li>
+          <li>feature two</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="oneYear">
+        <div class="level">One Year</div>
+        <h2>$80</h2>
+        <ol>
+          <li>all access</li>
+          <li>feature one</li>
+          <li>feature two</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer></footer>
+</div>
