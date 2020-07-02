@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #EEEE;
+  background-color: #D0D3D4 ;
   font-family: sans-serif;
 }
 
@@ -40,15 +40,16 @@ a {
 
 header {
   position: fixed;
-  border: 1px black solid;
+  //border: 1px black solid;
   border-radius: 5px;
+  width: 100%;
   top: 0px;
   min-height: 75px;
-  padding: 0px 20px;
+  padding: 0px 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: hlr(0,);
+  background-color: #48C9B0;
 }
 
 .logo {
@@ -56,7 +57,7 @@ header {
 }
 
 .logo > img {
-  width: 150px;
+  width: 100px;
   height: auto;
   max-width: 300px;
   display: flex;
@@ -117,8 +118,8 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 500px;
-  margin-top: 50px;
+  height: 300px;
+  margin-top: 65px;
 }
 
 #info > h2 {
@@ -147,14 +148,19 @@ nav {
 }
 
 #aboutUs{
-  margin-top:30px;
+  margin-top: 10px;
+}
+
+.icon {
+  display: flex;
+  width: 100px;
 }
 
 #aboutUs .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 125px;
+  height: 100px;
   width: 20vw;
   color: darkorange;
 }
@@ -237,117 +243,4 @@ nav {
 
 </style>
 
-<div id="page-wrapper">
-  <header id="header">
-    <div class="logo">
-      <img 
-           id="header-img" 
-           src="https://media.publit.io/file/logo-t8.jpg"
-           alt="generic logo"
-           />
-    </div>
-   
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#aboutUs" class="nav-link">About Us</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-        <li><a href="#placeOrder" class="nav-link">Place an Order</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <div></div>
-  
-  <section id="info">
-    <h2>For All Your Needs</h2>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input
-             name="email"
-             id="email"
-             type="email"
-             placeholder="Enter your Email"
-             required
-       />
-      <input id="submit" type="submit" value="Accept" class="btn" />
-    </form>
-  </section>
-    
-  <div class="container">
-    <section id="aboutUs">
-      <div class="grid">
-        <div class="icon"><i class=""></i></div>
-        <div class="desc">
-          <h2>We're Family Owned</h2>
-          <p>
-            Since 2005 our family has been helping people with their
-            needs that no one else can!
-          </p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="icon"><i class=""></i></div>
-        <div class="desc">
-          <h2>Organic Materials</h2>
-          <p>
-            We make sure we only use the finest organic materials
-            that are reponsibly cultivated by our expert farmers.
-          </p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="icon"><i class=""></i></div>
-        <div class="desc">
-          <h2>Money Back</h2>
-          <p>
-            We gaurantee your money back if you're not satisfied, we
-            want to make sure the only things you have to say 
-            about us are good things!
-          </p>
-        </div>
-      </div>
-    </section>
-    
-    <section id="pricing">
-      <iframe width="560" 
-              height="315"
-              src="https://www.youtube.com/embed/lBlXczPfe0c"
-              frameborder="0" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-       ></iframe>
-    </section>
-    
-    <section id="pricing">
-      <div class="product" id="oneMonth">
-        <div class="level">One Month</div>
-        <h2>$10</h2>
-        <ol>
-          <li>limited access</li>
-          <li>feature one</li>
-          <li>feature two</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="sixMonth">
-        <div class="level">Six Months</div>
-        <h2>$45</h2>
-        <ol>
-          <li>extra access</li>
-          <li>feature one</li>
-          <li>feature two</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-      <div class="product" id="oneYear">
-        <div class="level">One Year</div>
-        <h2>$80</h2>
-        <ol>
-          <li>all access</li>
-          <li>feature one</li>
-          <li>feature two</li>
-        </ol>
-        <button class="btn">Select</button>
-      </div>
-    </section>
-    <footer></footer>
-</div>
+https://media.publit.io/file/people-icon.png
